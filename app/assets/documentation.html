@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
+
+<head>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="author" content="haran" />
+  <meta name="generator" content="haran" />
+
+  <!-- Navigational metadata for large websites (an accessibility feature): -->
+  <link rel="top" href="./index.html" title="Homepage" />
+  <link rel="up" href="./index.html" title="Up" />
+  <link rel="first" href="./index.html" title="First page" />
+  <link rel="previous" href="./index.html" title="Previous page" />
+  <link rel="next" href="./index.html" title="Next page" />
+  <link rel="last" href="./index.html" title="Last page" />
+  <link rel="toc" href="./index.html" title="Table of contents" />
+  <link rel="index" href="./index.html" title="Site map" />
+
+  <link rel="stylesheet" type="text/css" href="./home-screen.css" media="screen" title="home (screen)" />
+  <link rel="stylesheet" type="text/css" href="./home-print.css" media="print" />
+
+  <title>home</title>
+  <style type="text/css">
+    <!--
+    .style1 {
+      color: #C1FF64
+    }
+    -->
+  </style>
+</head>
+
+<body>
+  <!-- For non-visual user agents: -->
+  <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+
+  <!-- ##### Header ##### -->
+
+  <div id="header">
+    <h1 class="headerTitle">
+      <a href="./index" title="Browse to homepage">Catalogo: </a>
+      <span>Documents categorization with LDA & Active Learning</span>
+    </h1>
+
+    <div class="subHeader">
+      <span class="doNotDisplay">Navigation: </span>
+      <a href="/home">Back to Experimental UI </a>
+      <a >  |  </a>
+      <a href="https://github.com/ruxiz2020/catalogo">GitHub Repo</a>
+
+    </div>
+  </div>
+
+  <div id="side-bar">
+
+    <!-- ##### Left Sidebar ##### -->
+
+    <div class="leftSideBar">
+      <p class="sideBarTitle">References</p>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">LDA Wiki</a></li>
+        <li><a href="https://user.eng.umd.edu/~smiran/LDA.pdf">LDA Explained</a></li>
+        <li><a href="http://svn.aksw.org/papers/2015/WSDM_Topic_Evaluation/public.pdf">Exploring the Space of Topic Coherence Measures</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Active_learning_(machine_learning)">Active Learning Wiki</a></li>
+        <li><a href="https://www.datacamp.com/community/tutorials/active-learning">Active Learning Tutorial</a></li>
+        <li><a href="https://towardsdatascience.com/tsne-vs-umap-global-structure-4d8045acba17">tSNE vs. UMAP</a></li>
+        <li><a href="https://github.com/plotly/dash-sample-apps/tree/master/apps/dash-cytoscape-lda">Dash-cytoscape NLP demo</a></li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+  <!-- ##### Main Copy ##### -->
+
+  <div id="main-copy">
+    <h1 id="introduction" style="border-top: none; padding-top: 0;">Introduction</h1>
+    <p>
+      This module is designed to explore methodologies that help automatically categorize a set of text files into groups of
+      topics via LDA (Topic Modeling), and at the same time it utilizes Active Learning to collecct label data in a smart way.
+    </p>
+
+    <dt>LDA </dt>
+    <p>
+      <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet allocation</a>
+      Given a set of documents, LDA posits that each document is a mixture of a small number of topics and that each word's presence
+      is attributable to one of the document's topics.
+      <span style="color:red;">Model Parameters</span>
+    <ul>
+      <li> M denotes the number of documents</li>
+      <li> N is number of words in a given document (document i has N_{i} words)</li>
+      <li> α is the parameter of the Dirichlet prior on the per-document topic distributions</li>
+      <li> β is the parameter of the Dirichlet prior on the per-topic word distribution</li>
+      <li> theta _{i} is the topic distribution for document i</li>
+      <li> varphi _{k} is the word distribution for topic k</li>
+      <li> z_{ij} is the topic for the j-th word in document i</li>
+      <li> w_{ij} is the specific word.</li>
+    </ul>
+    <span style="color:red;">Generative process</span>
+  <ul>
+    <li> Choose theta_{i} from Dir(alpha), where i in {1, ..., M} and Dir(alpha) is a Dirichlet distribution with a symmetric parameter alpha  which typically is sparse (alpha < 1)</li>
+    <li> Choose varphi_{k} from Dir(beta), where k in {1, ..., K} and Dir(beta) and beta typically is sparse</li>
+    <li> For each of the word positions i,j, where i in {1, ..., M}, and j in {1, ..., N}</li>
+    <ul>
+    <li> (a)  Choose a topic z_{i,j} ~ Multinomial(theta_{i}) </li>
+    <li> (b)  Choose a topic w_{i,j} ~ Multinomial(varphi_Z{i,j}) </li>
+    </ul>
+  </ul>
+  Gibbs sampling is usually used for approximation of the posterior distribution .
+    </p>
+    <div class="image_sklearn">
+      <div class="imageContainer">
+        <div class="sklearnPlot">
+          <img src="LDA_visual_02.png" alt="rf impurity-based importance" width="720" height="350">
+          <img src="LDA_visual_06.png" alt="rf impurity-based importance" width="720" height="350">
+        </div>
+      </div>
+
+    </div>
+
+    <br clear="all" />
+
+    <dt>Active learning </dt>
+    <p>
+      <a href="https://en.wikipedia.org/wiki/Active_learning_(machine_learning)">Active learning </a>
+
+      Active learning is a special case of machine learning in which a learning algorithm can interactively
+      query a user (or some other information source) to label new data points with the desired outputs.
+      In statistics literature, it is sometimes also called optimal experimental design.
+      The information source is also called teacher or oracle.
+
+      There are situations in which unlabeled data is abundant but manual labeling is expensive.
+      In such a scenario, learning algorithms can actively query the user/teacher for labels.
+      This type of iterative supervised learning is called active learning. Since the learner chooses
+      the examples, the number of examples to learn a concept can often be much lower than the number
+      required in normal supervised learning.
+    </p>
+
+    <p>Definitions</p>
+    <p>
+    Let T be the total set of all data under consideration.
+    For example, in a protein engineering problem, T would include all proteins that are known
+    to have a certain interesting activity and all additional proteins that one might want to
+    test for that activity. During each iteration, i, T is broken up into three subsets.
+    <ul>
+      <li> 1. T_{K,i}: Data points where the label is known.</li>
+      <li> 2. T_{U,i}: Data points where the label is unknown.</li>
+      <li> 3. T_{C,i}: A subset of TU,i that is chosen to be labeled.</li>
+    </ul>
+    Most of the current research in active learning involves the best method to choose the data points for T_{C,i}.
+    </p>
+
+
+    <p>Scenarios</p>
+    <p>
+
+    <ul>
+      <li> Membership Query Synthesis: This is where the learner generates its own instance from an
+      underlying natural distribution. For example, if the dataset are pictures of humans and animals,
+      the learner could send a clipped image of a leg to the teacher and query if this appendage belongs
+      to an animal or human. This is particularly useful if the dataset is small.</li>
+      <li> Pool-Based Sampling: In this scenario, instances are drawn from the entire data pool and
+      assigned an informative score, a measurement of how well the learner “understands” the data.
+      The system then selects the most informative instances and queries the teacher for the labels.</li>
+      <li> Stream-Based Selective Sampling: Here, each unlabeled data point is examined one at a
+      time with the machine evaluating the informativeness of each item against its query parameters.
+      The learner decides for itself whether to assign a label or query the teacher for each datapoint.</li>
+    </ul>
+    </p>
+
+    </p>
+    </p>
+    </p>
+    </p>
+
+
+
+    <h1 id="cross-browser">Future Works</h1>
+    <p>Placeholder</p>
+
+
+    <h1 id="stylesheets">Cheat Sheet: </h1>
+    <dl>
+      <dt>1. Evaluation of LDA</dt>
+      <dd>Topic Coherence Score</dd>
+      <ul>
+        <li> C_v measure is based on a sliding window, one-set segmentation of the top words and an indirect
+        confirmation measure that uses normalized pointwise mutual information (NPMI) and the cosine similarity</li>
+        <li> C_p is based on a sliding window, one-preceding segmentation of the top words and the
+        confirmation measure of Fitelson’s coherence.</li>
+        <li> C_uci measure is based on a sliding window and the pointwise mutual information (PMI)
+        of all word pairs of the given top words.</li>
+        <li> C_umass is based on document cooccurrence counts, a one-preceding segmentation and
+        a logarithmic conditional probability as confirmation measure</li>
+        <li> C_npmi is an enhanced version of the C_uci coherence using
+        the normalized pointwise mutual information (NPMI)</li>
+        <li> C_a is baseed on a context window, a pairwise comparison of the top words and an indirect confirmation
+        measure that uses normalized pointwise mutual information (NPMI) and the cosine similarity</li>
+      </ul>
+
+    </dl>
+
+
+  </div>
+
+  <!-- ##### Footer ##### -->
+
+  <div id="footer">
+
+    <div>
+      Copyright &copy; 2020, catalogo |
+      Modified on 2020-October-07 by
+      <a href="ruxiz2005@gmail.com" title="Email the author">zruxi</a>
+    </div>
+  </div>
+</body>
+
+</html>

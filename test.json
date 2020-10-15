@@ -1,0 +1,163 @@
+{
+  "data": {
+    "source": "2576",
+    "target": "4735"
+  },
+  "classes": "10",
+  "tgt_topic": "10",
+  "src_topic": "6",
+  "locked": true
+}]
+}, {
+  "n_cites": 1,
+  "journals": ["PLoS One", "Viruses", "PLoS Pathog"],
+  "elm_list": [{
+      "data": {
+        "id": "12",
+        "label": "12",
+        "title": "cleavage of a neuroinvasive human respiratory virus spike glycoprotein by proprotein convertases modulates neurovirulence and virus spread within the central nervous system",
+        "journal": "PLoS Pathog",
+        "pub_date": "2015-11-06",
+        "authors": "Le Coupanec, Alain; Desforges, Marc; Meessen-Pinard, Mathieu; Dub\u00e9, Mathieu; Day, Robert; Seidah, Nabil G.; Talbot, Pierre J.",
+        "cited_by": "1455,1646,1766,2429",
+        "n_cites": 4,
+        "node_size": 22
+      },
+      "position": {
+        "x": -173,
+        "y": -468
+      },
+      "classes": "8",
+      "selectable": true,
+      "grabbable": false
+    },
+
+    {}  {
+      "data": {
+        "source": "2576",
+        "target": "4735"
+      },
+      "classes": "10",
+      "tgt_topic": "10",
+      "src_topic": "6",
+      "locked": true
+    }
+  ]
+} {
+  "n_tgt": 3,
+  "doc_src": "medium.com",
+  "elm_list": [{
+        "data": {
+          "id": "0",
+          "label": "0",
+          "title": "A Beginners Guide to Unsupervised Learning | by Mathanraj Sharma | Analytics Vidhya | Medium",
+          "pub_date": "2019-08-09T12:48:35.943Z",
+          "authors": "Mathanraj Sharma",
+          "target_txt": "A Short Introduction to Active Learning | by Raul Incze | Cognifeed | Medium/A gentle introduction to genetic algorithm | by Nguy\u1ec5n Vi\u1ec7t H\u01b0ng | The happy lone guy | Medium/An Intro to the Page Rank Algorithm | by Zachary Marszal | Medium/An intro to topic models for text analysis | by Patrick van Kessel | Pew Research Center: Decoded | Medium/Anomaly Detection of Time Series Data | by Jet New | Medium/Automated and Interpretable Machine Learning | by Francesca Lazzeri | Microsoft Azure | Medium/Effective Approaches for Time Series Anomaly Detection | by Aditya Bhattacharya | Towards Data Science/Get started with NLP (Part I). This is the first part of a series of\u2026 | by sigmoider | Medium/Guide to Unsupervised Machine Learning | by Volodymyr Bilyk | Medium/How to Build a Recommendation System for Purchase Data (Step-by-Step) | by Moorissa Tjokro | Data Driven Investor | Medium/Interpreting and validating topic models | by Patrick van Kessel | Pew Research Center: Decoded | Medium/Introduction to Word Embedding and Word2Vec | by Dhruvil Karani | Towards Data Science/LDA Topic Modeling: An Explanation | by Tyler Doll | Towards Data Science/Latent Dirichlet Allocation(LDA): A guide to probabilistic modelling approach for topic discovery | by Awan-Ur-Rahman | Towards Data Science/Machine Learning for Humans, Part 3: Unsupervised Learning | by Vishal Maini | Machine Learning for Humans | Medium/Natural Language Processing: Experimenting Entity Recognition ( Part 2 AWS Comprehend NLP API) | by Patrick Rotzetter | Analytics Vidhya | Medium/Navigating the Unsupervised Learning Landscape | by Eugenio Culurciello | Intuition Machine | Medium/Principal Component Analysis(PCA) \u2014 Dive deep | by Sanjay Ulsha | Analytics Vidhya | Medium/Real-Time Anomaly Detection for Cognitive Intelligence | by Xenonstack | XenonStack AI | Medium/Recommendation Systems : User-based Collaborative Filtering using N Nearest Neighbors | by Ashay Pathak | SFU Professional Master\u2019s Program in Computer Science | Medium/Role of Distance Metrics in Machine Learning | by Writuparna Banerjee | Analytics Vidhya | Medium/Supervised and Unsupervised Learning | by Vineet Maheshwari | Data Driven Investor | Medium/Topic Modeling and Latent Dirichlet Allocation (LDA) in Python | by Susan Li | Towards Data Science/Unsupervised Machine Learning. In case you have not read the basis of\u2026 | by Harinath Selvaraj | coding&stuff | Medium/What similarity metric should you use for your recommendation system? | by Brett Vintch | bag of words | Medium/Word2Vec (Skip-Gram model) Explained | by n0obcoder | Data Driven Investor | Medium",
+          "n_target_txt": 26.0,
+          "node_size": 51
+        },
+        "position": {
+          "x": 340,
+          "y": -294
+        },
+        "classes": "8",
+        "selectable": true,
+        "grabbable": false
+      }, {
+        "data": {
+          "id": "1",
+          "label": "1",
+          "title": "Importance of Distance Metrics in Machine Learning | by Alekhyo Banerjee | Medium",
+          "pub_date": "2020-06-07T16:33:17.714Z",
+          "authors": "Alekhyo Banerjee",
+          "target_txt": "Natural Language Processing is Fun! | by Adam Geitgey | Medium/Real-Time Anomaly Detection for Cognitive Intelligence | by Xenonstack | XenonStack AI | Medium/Recommendation Systems : User-based Collaborative Filtering using N Nearest Neighbors | by Ashay Pathak | SFU Professional Master\u2019s Program in Computer Science | Medium/Recommendation Systems. Diving into recommendation systems | by Bindhu Balu | Towards AI\u200a\u2014\u200aMultidisciplinary Science Journal | Medium/Role of Distance Metrics in Machine Learning | by Writuparna Banerjee | Analytics Vidhya | Medium/Similarity Measures \u2014 Scoring Textual Articles | by Saif | Towards Data Science/Similarity Queries and Text Summarization in NLP | by Aravind CR | The Startup | Medium/Similarity and Distance Metrics for Data Science and Machine Learning | by Gonzalo Ferreiro Volpi | DataSeries | Medium/The Computational Complexity of Graph Neural Networks explained | by Franziska Lippoldt | Sep, 2020 | Medium/Topic Modeling and Latent Dirichlet Allocation (LDA) in Python | by Susan Li | Towards Data Science/Topic Modeling with LSA, PLSA, LDA & lda2Vec | by Joyce Xu | NanoNets | Medium/Types of Distance Metrics in Machine Learning. | by Priscila Tamang Ghising | Medium/Unsupervised Machine Learning. In case you have not read the basis of\u2026 | by Harinath Selvaraj | coding&stuff | Medium/Various Implementations of Collaborative Filtering | by Prince Grover | Towards Data Science/Various types of Distance Metrics in Machine Learning | by Sourodip Kundu | Analytics Vidhya | Medium/What similarity metric should you use for your recommendation system? | by Brett Vintch | bag of words | Medium/Word Embedding in NLP: One-Hot Encoding and Skip-Gram Neural Network | by Jianna Park | Towards Data Science/\u201cDifferent types of Distances used in Machine Learning\u201d | by Chandrima Sarkar | Medium",
+          "n_target_txt": 18.0,
+          "node_size": 43
+        },
+        "position": {
+          "x": -606,
+          "y": -112
+        },
+        "classes": "3",
+        "selectable": true,
+        "grabbable": false
+      }, {
+        "data": {
+          "id": "2",
+          "label": "2",
+          "title": "A gentle introduction to genetic algorithm | by Nguy\u1ec5n Vi\u1ec7t H\u01b0ng | The happy lone guy | Medium",
+          "pub_date": "2018-03-19T06:34:10.318Z",
+          "authors": "Nguy\u1ec5n Vi\u1ec7t H\u01b0ng",
+          "target_txt": "An Insight to Genetic Algorithms \u2014 Part I | by Chathurangi Shyalika | Data Driven Investor | Medium/Biologically-Inspired AI: Genetic Algorithms | by James Le | Cracking The Data Science Interview | Medium/Collaborative Filtering and Embeddings \u2014 Part 1 | by Shikhar Gupta | Towards Data Science/EUC Data Science Team : Workspace One Intelligence Production Data Access/Explore Markov Chains With Examples \u2014 Markov Chains With Python | by Sayantini Deb | Edureka | Medium/Genetic Algorithm and its Wide Spectrum | by Shaashwat Agrawal | The Startup | Medium/Genetic Algorithm: Part 1 -Intuition | by Satvik Tiwari | Koderunners | Medium/Genetic Algorithms. How human evolution paved the way for\u2026 | by Amit Naik | Data Driven Investor | Medium/Importance of Distance Metrics in Machine Learning | by Alekhyo Banerjee | Medium/Introduction to Genetic Algorithms \u2014 Including Example Code | by Vijini Mallawaarachchi | Towards Data Science/Natural Language Processing is Fun! | by Adam Geitgey | Medium/Product Discovery Tips. Product discovery refers to the\u2026 | by Roman Pichler | Medium/Real-time anomaly detection with exponentially-distributed data | by Steven Raybon | Towards Data Science/Topic Modeling with LSA, PLSA, LDA & lda2Vec | by Joyce Xu | NanoNets | Medium/Understanding Genetic Algorithms in the Artificial Intelligence Spectrum | by Manish Kumar | Analytics Vidhya | Medium/Understanding Genetic Algorithms. Solving a Battleship Board Game as an\u2026 | by Adam C Dick | Towards Data Science/Understanding UX Threat (part 1). Improving your designs by going down\u2026 | by Dave Vronay | ringcentral-ux | Medium",
+          "n_target_txt": 17.0,
+          "node_size": 42
+        },
+        "position": {
+          "x": 149,
+          "y": -481
+        },
+        "classes": "5",
+        "selectable": true,
+        "grabbable": false
+      }, {
+        "data": {
+          "id": "3",
+          "label": "3",
+          "title": "Recommendation Systems : User-based Collaborative Filtering using N Nearest Neighbors | by Ashay Pathak | SFU Professional Master\u2019s Program in Computer Science | Medium",
+          "pub_date": "2019-03-09T21:23:12.017Z",
+          "authors": "Ashay Pathak",
+          "target_txt": "Recommendation Systems. Diving into recommendation systems | by Bindhu Balu | Towards AI\u200a\u2014\u200aMultidisciplinary Science Journal | Medium/Recommender Systems \u2014 User-Based and Item-Based Collaborative Filtering | by Carlos Pinela | Medium/Role of Distance Metrics in Machine Learning | by Writuparna Banerjee | Analytics Vidhya | Medium/Similarity Measures \u2014 Scoring Textual Articles | by Saif | Towards Data Science/Similarity and Distance Metrics for Data Science and Machine Learning | by Gonzalo Ferreiro Volpi | DataSeries | Medium/Topic Modeling with LSA, PLSA, LDA & lda2Vec | by Joyce Xu | NanoNets | Medium/Transformer Architecture: Attention Is All You Need | by Aditya Thiruvengadam | Medium/Types of Distance Metrics in Machine Learning. | by Priscila Tamang Ghising | Medium/USER-USER Collaborative filtering Recommender System in Python | by Ankur Tomar | Medium/Understanding Random Forest. How the Algorithm Works and Why it Is\u2026 | by Tony Yiu | Towards Data Science/Understanding Recommendation Engines in AI | by Humans For AI | humansforai | Medium/Using NLP (BERT) to improve OCR accuracy | by Ravi Ilango | States Title | Medium/Various Implementations of Collaborative Filtering | by Prince Grover | Towards Data Science/What is Hidden in the Hidden Markov Model? | by Vimarsh Karbhari | Acing AI | Medium/What similarity metric should you use for your recommendation system? | by Brett Vintch | bag of words | Medium/Word2Vec (Skip-Gram model) Explained | by n0obcoder | Data Driven Investor | Medium/\u201cDifferent types of Distances used in Machine Learning\u201d | by Chandrima Sarkar | Medium",
+          "n_target_txt": 17.0,
+          "node_size": 42
+        },
+        "position": {
+          "x": -574,
+          "y": -83
+        },
+        "classes": "3",
+        "selectable": true,
+        "grabbable": false
+      }, {
+        "data": {
+          "id": "4",
+          "label": "4",
+          "title": "Beginner\u2019s guide to build Recommendation Engine in Python | by Amey Band | The Startup | Medium",
+          "pub_date": "2020-05-05T18:45:11.716Z",
+          "authors": "Amey Band",
+          "target_txt": "Collaborative Filtering and Embeddings \u2014 Part 1 | by Shikhar Gupta | Towards Data Science/Collaborative Filtering in Recommendation Systems | by Kunal Deshmukh | kunalrdeshmukh | Medium/Content-Based Recommendations \u2014 Part 3 | by Rakesh4real | Fnplus Club | Medium/Different Types of Distance Metrics used in Machine Learning | by Kunal Gohrani | Medium/EUC Data Science Team : Machine Learning Pipeline/Explore Markov Chains With Examples \u2014 Markov Chains With Python | by Sayantini Deb | Edureka | Medium/How Netflix\u2019s Recommendation Engine Works? | by Springboard India | Medium/How to Build a Recommendation System for Purchase Data (Step-by-Step) | by Moorissa Tjokro | Data Driven Investor | Medium/How to Build a Recommender System(RS) | by Gaurav Sharma | Data Driven Investor | Medium/Importance of Distance Metrics in Machine Learning | by Alekhyo Banerjee | Medium/Introduction to recommendation systems and How to design Recommendation system,that resembling the Amazon | by Madasamy M | Medium/NLP: Word Embedding Techniques for Text Analysis | by Fangyug | SFU Professional Master\u2019s Program in Computer Science | Medium/PCA: Principal Component Analysis | by Kadir Yasar | Medium/Principal Component Analysis. This article is divided into two\u2026 | by Mahesh Kumar \ud83d\udc7e | maheshkkumar | Medium/Recommendation Engine Explained. Github source code examples can be\u2026 | by Mohamed Fawzy | tajawal | Medium/Recommendation Engines 101. Get Started & Master the Basics | by Pierre Pfennig | data from the trenches | Medium/Recommendation Systems : User-based Collaborative Filtering using N Nearest Neighbors | by Ashay Pathak | SFU Professional Master\u2019s Program in Computer Science | Medium/Recommendation Systems. Diving into recommendation systems | by Bindhu Balu | Towards AI\u200a\u2014\u200aMultidisciplinary Science Journal | Medium/Role of Distance Metrics in Machine Learning | by Writuparna Banerjee | Analytics Vidhya | Medium/Similarity and Distance Metrics for Data Science and Machine Learning | by Gonzalo Ferreiro Volpi | DataSeries | Medium/Topic Modeling Open Source Tool. A tool built with python and streamlit\u2026 | by Bamigbade Opeyemi | Towards AI\u200a\u2014\u200aMultidisciplinary Science Journal | Medium/Types of Distance Metrics in Machine Learning. | by Priscila Tamang Ghising | Medium/USER-USER Collaborative filtering Recommender System in Python | by Ankur Tomar | Medium/Understanding Recommendation Engines in AI | by Humans For AI | humansforai | Medium/Various Implementations of Collaborative Filtering | by Prince Grover | Towards Data Science/Various types of Distance Metrics in Machine Learning | by Sourodip Kundu | Analytics Vidhya | Medium/What is a Transformer?. An Introduction to Transformers and\u2026 | by Maxime | Inside Machine learning | Medium/What similarity metric should you use for your recommendation system? | by Brett Vintch | bag of words | Medium/\u201cDifferent types of Distances used in Machine Learning\u201d | by Chandrima Sarkar | Medium",
+          "n_target_txt": 29.0,
+          "node_size": 54
+        },
+        "position": {
+          "x": -452,
+          "y": -30
+        },
+        "classes": "2",
+        "selectable": true,
+        "grabbable": false
+      }, {
+        "data": {
+          "id": "5",
+          "label": "5",
+          "title": "Recommendation Engines 101. Get Started & Master the Basics | by Pierre Pfennig | data from the trenches | Medium",
+          "pub_date": "2018-01-08T14:39:09.840Z",
+          "authors": "Pierre Pfennig",
+          "target_txt": "The basics of investigating an Office 365 breach | by Pete Bryan | Positive Security Thinking | Medium/Topic Modeling with LSA, PLSA, LDA & lda2Vec | by Joyce Xu | NanoNets | Medium/Understanding Recommendation Engines in AI | by Humans For AI | humansforai | Medium/Unsupervised Machine Learning. In case you have not read the basis of\u2026 | by Harinath Selvaraj | coding&stuff | Medium/Various Implementations of Collaborative Filtering | by Prince Grover | Towards Data Science",
+          "n_target_txt": 5.0,
+          "node_size": 24
+        },
+        "position": {
+          "x": -422,
+          "y": -31
+        },
+        "classes": "2",
+        "selectable": true,
+        "grabbable": false
+      }, {
+        "data": {
+          "id": "7",
+          "label": "7",
+          "title": "Machine Learning for Humans, Part 3: Unsupervised Learning | by Vishal Maini | Machine Learning for Humans | Medium",
+          "pub_date": "2018-05-28T18:08:01.484Z",
+          "authors": "Vishal Maini",
