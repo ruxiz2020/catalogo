@@ -22,8 +22,11 @@ sys.path.append("..")
 #app = dash.Dash(__name__)
 #server = app.server
 #
+lda_df = pd.read_csv("outputs/lda_df.csv")
 
-df_lda = pd.read_csv("outputs/summary_df.csv.gz", compression='gzip')
+df_summary = pd.read_csv("outputs/summary_df.csv.gz", compression='gzip')
+df_lda = lda_df.merge(df_summary[['title', 'author', 'date', 'summary']], on='title')
+
 columns_to_display = ['topics', 'topic_txt',
                       'title', 'author', 'src', 'summary']
 df_lda = df_lda[columns_to_display]
@@ -228,7 +231,11 @@ def gen_bar_chart(topic_number):
 def filter_by_topic(topic_num):
     """
     """
-    df_lda = pd.read_csv("outputs/summary_df.csv.gz", compression='gzip')
+    lda_df = pd.read_csv("outputs/lda_df.csv")
+
+    df_summary = pd.read_csv("outputs/summary_df.csv.gz", compression='gzip')
+    df_lda = lda_df.merge(df_summary[['title', 'author', 'date', 'summary']], on='title')
+    
     df_lda = df_lda[df_lda['topics'] == topic_num]
     data = df_lda.to_dict(orient='records')
 
