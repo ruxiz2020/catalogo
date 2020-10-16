@@ -14,7 +14,7 @@ formatter = logging.Formatter(
 sh.setFormatter(formatter)
 root_logger.addHandler(sh)
 
-df_input = pd.read_csv('outputs/keywords_df.csv.gz', compression='gzip')
+df_input = pd.read_csv('../outputs/keywords_df.csv.gz', compression='gzip')
 df_keywords = pd.DataFrame(df_input.groupby(
     ['title', 'author', 'date'])['keywords'].apply(list))
 df_keywords.reset_index(inplace=True)
@@ -80,10 +80,10 @@ df_agg['n_target_title'] = df_agg['target_title'].apply(len_list)
 df_agg['target_title'] = df_agg['target_title'].apply(list_2_str)
 
 
-df_lda = pd.read_csv('outputs/lda_df.csv')
+df_lda = pd.read_csv('../outputs/lda_df.csv')
 print(df_lda.head())
 df_lda = df_lda.merge(df_agg, on='title', how='left')
 
-jacc_file = "outputs/network_df.csv"
+jacc_file = "../outputs/network_df.csv"
 logger.info(f"Saving file compressed {jacc_file}")
 df_lda.to_csv(jacc_file, index=False)

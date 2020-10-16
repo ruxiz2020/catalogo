@@ -46,7 +46,7 @@ df_res = pd.concat(list_keywords)
 print(df_res)
 
 
-keywords_file = "outputs/keywords_df.csv.gz"
+keywords_file = "../outputs/keywords_df.csv.gz"
 logger.info(f"Saving file compressed {keywords_file}")
 df_res[['title', 'author', 'date', 'rank', 'keywords']].to_csv(
     keywords_file, compression='gzip')

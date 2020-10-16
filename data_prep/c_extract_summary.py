@@ -43,7 +43,7 @@ for row in df_input.iterrows():
 
 df_input['summary'] = list_summ
 
-summary_file = "outputs/summary_df.csv.gz"
+summary_file = "../outputs/summary_df.csv.gz"
 logger.info(f"Saving file compressed {summary_file}")
 df_input[['title', 'author', 'date', 'summary']].to_csv(
     summary_file, compression='gzip')

@@ -322,8 +322,10 @@ lda = LdaModel(
 logger.info(f"Take a look at the results")
 top_topics = lda.top_topics(corpus)  # , num_words=20)
 
+import pyLDAvis.gensim
+import pyLDAvis
 # Visualize the topics
-pyLDAvis.enable_notebook()
+#pyLDAvis.enable_notebook()
 vis = pyLDAvis.gensim.prepare(lda, corpus, dictionary)
 pyLDAvis.save_html(vis, '../assets/lda.html')
 
@@ -335,8 +337,8 @@ print("Average topic coherence: %.4f." % avg_topic_coherence)
 # from pprint import pprint
 # pprint(top_topics)
 #
-# import pyLDAvis.gensim
-# import pyLDAvis
+#import pyLDAvis.gensim
+#import pyLDAvis
 #
 # vis = pyLDAvis.gensim.prepare(lda, corpus, dictionary)
 # with open('outputs/lda_vis.html', 'w') as f:

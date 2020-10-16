@@ -16,7 +16,7 @@ sh.setFormatter(formatter)
 root_logger.addHandler(sh)
 
 
-network_df = pd.read_csv("outputs/network_df.csv")
+network_df = pd.read_csv("../outputs/network_df.csv")
 
 # Prep data
 network_df["target_title"] = network_df["target_title"].fillna("")
@@ -156,5 +156,5 @@ ee['elms'] = edge_list
 with open("outputs/edge_list.json", "w") as f:
     json.dump(ee, f)
 '''
-with open("outputs/startup_elms.json", "w") as f:
+with open("../outputs/startup_elms.json", "w") as f:
     json.dump(startup_elms, f)
