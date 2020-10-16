@@ -1,0 +1,9 @@
+.git
+.DS_Store
+catalogo/__pycache__/
+catalogo/app/__pycache__/
+catalogo/app/apps/__pycache__/
+catalogo/algo/__pycache__/
+catalogo/util/__pycache__/
+env/
+.ipynb_checkpoints/

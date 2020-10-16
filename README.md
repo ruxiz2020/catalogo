@@ -15,8 +15,7 @@ env/bin/pip install -r requirements.txt
 
 Bring up the UI:
 ```bash
-cd app/
-../env/bin/python index.py
+env/bin/python index.py
 ```
 
 Then open up `http://127.0.0.1:9000` in your browser
